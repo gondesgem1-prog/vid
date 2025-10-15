@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Video Generator</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://esm.run/@google/genai"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main class="container">
+      <header class="app-header">
+        <h1>AI Video Generator</h1>
+        <p>
+          Describe your video idea, and Gemini will generate 5 unique,
+          portrait-mode videos for you.
+        </p>
+      </header>
+      <section class="prompt-section">
+        <textarea
+          id="prompt-input"
+          rows="4"
+          placeholder="e.g., A happy robot character waving at the camera, promotional style for a tech brand."
+        ></textarea>
+        <button id="generate-button">
+          <i class="fa-solid fa-sparkles"></i> Generate Videos
+        </button>
+      </section>
+      <section id="status-section" class="status-section" style="display: none">
+        <div class="loader"></div>
+        <p id="status-message">Initializing...</p>
+      </section>
+      <section id="results-section" class="results-section"></section>
+    </main>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

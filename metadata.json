@@ -1,0 +1,6 @@
+{
+  "name": "Copy of AI Video Generator",
+  "description": "Uses the Gemini and Veo APIs to automatically generate 5 portrait-mode videos from a single text prompt, complete with AI-powered prompt enhancement.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
